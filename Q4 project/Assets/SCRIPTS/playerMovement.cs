@@ -34,13 +34,13 @@ public class playerMovement : MonoBehaviour {
             float h = Input.GetAxis("L_XAxis_" + playerNum); //piece of the angle I need to face is X value from analog stick state
             float v = Input.GetAxis("L_YAxis_" + playerNum); //piece of the angle I need to face is Y value from analog stick state
             float angle = Mathf.Atan2(h, v) * Mathf.Rad2Deg; //the angle I need to face is this
-            transform.localEulerAngles = new Vector3(0, -angle + 90, 0); //set facing direction to this angle
+            transform.localEulerAngles = new Vector3(0, -angle + 270, 0); //set facing direction to this angle
         }
 
         transform.position += movementSpeed / 4;//Actually make the object move
         if (Input.GetButtonDown("A_" + playerNum) && grounded)
         {
-            rb.AddForce(new Vector3 (0, 1000, 0));
+            rb.AddForce(new Vector3 (0, 800, 0));
         }
     }
 }
