@@ -29,12 +29,12 @@ public class playerMovement : MonoBehaviour {
         Vector3 movementSpeed = new Vector3(Input.GetAxisRaw("L_XAxis_" + playerNum), 0, -(Input.GetAxisRaw("L_YAxis_" + playerNum)));    //movement speed is the XY values of analog stick state
         
 
-        if (Input.GetAxis("L_XAxis_" + playerNum) != 0 || Input.GetAxis("L_YAxis_" + playerNum) != 0f)   //if the analog stick isn't centered
+        if (Input.GetAxis("R_XAxis_" + playerNum) != 0 || Input.GetAxis("R_YAxis_" + playerNum) != 0f)   //if the analog stick isn't centered
         {    
-            float h = Input.GetAxis("L_XAxis_" + playerNum); //piece of the angle I need to face is X value from analog stick state
-            float v = Input.GetAxis("L_YAxis_" + playerNum); //piece of the angle I need to face is Y value from analog stick state
-            float angle = Mathf.Atan2(h, v) * Mathf.Rad2Deg; //the angle I need to face is this
-            transform.localEulerAngles = new Vector3(0, -angle + 270, 0); //set facing direction to this angle
+            float h = Input.GetAxis("R_XAxis_" + playerNum); //piece of the angle I need to face is X value from analog stick state
+            float v = Input.GetAxis("R_YAxis_" + playerNum); //piece of the angle I need to face is Y value from analog stick state
+            float angle = Mathf.Atan2(h, -v) * Mathf.Rad2Deg; //the angle I need to face is this
+            transform.localEulerAngles = new Vector3(0, angle, 0); //set facing direction to this angle
         }
 
         transform.position += movementSpeed / 4;//Actually make the object move
