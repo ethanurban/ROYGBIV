@@ -38,7 +38,7 @@ public class playerMovement : MonoBehaviour {
         }
 
         transform.position += movementSpeed / 4;//Actually make the object move
-        if (Input.GetButtonDown("A_" + playerNum) && grounded)
+        if (Input.GetButtonDown("LB_" + playerNum) && grounded)
         {
             rb.AddForce(new Vector3 (0, 800, 0));
         }
