@@ -283,6 +283,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SCRIPTS\ExtendedFlycam.cs" />
+    <Compile Include="Assets\SCRIPTS\Floating on lava.cs" />
     <Compile Include="Assets\SCRIPTS\playerMovement.cs" />
     <Compile Include="Assets\SCRIPTS\youreWinner.cs" />
     <Compile Include="Assets\store assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
