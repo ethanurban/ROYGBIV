@@ -37,10 +37,10 @@ public class playerMovement : MonoBehaviour {
             transform.localEulerAngles = new Vector3(0, angle, 0); //set facing direction to this angle
         }
 
-        transform.position += movementSpeed / 8;//Actually make the object move
+        transform.position += movementSpeed / 4;//Actually make the object move
         if (Input.GetButtonDown("LB_" + playerNum) && grounded)
         {
-            rb.AddForce(new Vector3 (0, 100, 0));
+            rb.AddForce(new Vector3 (0, 800, 0));
         }
     }
 }
