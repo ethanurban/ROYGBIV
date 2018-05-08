@@ -1,5 +1,6 @@
 Base path: C:/mg/Editor/Data
 Cmd: initializeCompiler
+<<<<<<< HEAD
 Cmd: preprocess
   insize=1344 outsize=1508 ok=1
 Cmd: preprocess
@@ -8,3 +9,5 @@ Cmd: preprocess
   insize=1513 outsize=557 ok=1
 Cmd: preprocess
   insize=1205 outsize=418 ok=1
+=======
+>>>>>>> d9cca9bfe23fa43bc36c17c6ca825a3cec5e47ec
