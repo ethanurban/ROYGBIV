@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour {
 
+    
     Rigidbody rb;
     Vector3 movementSpeed;
     public int playerNum;
     bool lost;
+
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
